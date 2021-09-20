@@ -1,4 +1,6 @@
 This software depends on ROS. Installation instructions can be found here. We have tested this software on Ubuntu 18.04 and ROS Melodic.
+# 0. Introduction
+This project create a gazebo simulation evironment of a turtlebot robot with multi-sensors, including Lidar VLP-16 and event camera DVS 128. It's conveniet for some initial algorithm development in this gazebo evironment.
 
 # 1. Dependencies installation
 
