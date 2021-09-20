@@ -23,7 +23,8 @@ $ cd ../ && catkin build simulation
 ```
 you can start the simulation now:
 ```
-$ roslaunch simulation start.launch 
+$ roslaunch simulation start.launch
+$ roslaunch simulation dvs.launch 
 ```
 and you can control the motion of your turtlebot by:
 ```
