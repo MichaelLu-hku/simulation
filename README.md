@@ -19,7 +19,11 @@ $ cd ~/catkin_ws/src
 $ git clone https://github.com/MichaelLu-hku/simulation
 $ cd ../ && catkin build simulation
 ```
-then you can start the simulation:
+you can start the simulation now:
 ```
 $ roslaunch simulation start.launch 
+```
+and you can control the motion of your turtlebot by:
+```
+rosrun turtlebot3_teleop turtlebot3_teleop_key
 ```
