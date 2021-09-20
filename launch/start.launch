@@ -3,6 +3,7 @@
   <arg name="y_pos" default="1.0"/>
   <arg name="z_pos" default="0.0"/>
   <arg name="gpu" default="false"/>
+  <arg name="open_rviz" default="true"/>
  
   <arg name="second_tb3_x_pos" default=" 7.0"/>
   <arg name="second_tb3_y_pos" default="-1.0"/>
@@ -25,6 +26,12 @@
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
     <param name="publish_frequency" type="double" value="30.0" />
   </node>
+	
+  <!-- rviz -->
+  <group if="$(arg open_rviz)"> 
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find simulation)/rviz/simulation.rviz"/>
+  </group>
  
   </launch>
 
